@@ -1,7 +1,19 @@
+import { useState } from "react";
+import Navbar from "./Pages/Navbar";
+import { ThemeContext } from "./Context/ThemeContextApi";
+import { BgContainer } from "./App.StyledComponents";
 import "./App.css";
 
-function App() {
-    return <div className="App"></div>;
-}
+const App = () => {
+    const [dark, setDark] = useState(false);
+
+    return (
+        <ThemeContext.Provider value={{ dark, setDark }}>
+            <BgContainer theme={dark}>
+                <Navbar />
+            </BgContainer>
+        </ThemeContext.Provider>
+    );
+};
 
 export default App;
