@@ -2,9 +2,30 @@ import styled from "styled-components";
 
 export const BgContainer = styled.div`
     height: 100vh;
-    // border: 1px solid red;
+    overflow-y: auto;
+    background-color: ${(props) => (props.theme === true ? "#030712" : "#fff")};
 
-    // background-image: url("https://res.cloudinary.com/duzlefgz6/image/upload/v1689080438/1600w-vJDFhbySuuU-PhotoRoom_by7wvc.jpg");
-    // background-size: cover;
-    background-color: ${(props) => (props.theme === true ? "#111827" : "#fff")};
+    /* Style the scrollbar */
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: ${(props) => (props.theme === true ? "#424345" : "#c0c2c2")};
+        border-radius: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: ${(props) => (props.theme === true ? "#747575" : "#ebeded")};
+    }
+
+    @media (max-width: 767px) {
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 2px;
+        }
+    }
 `;

@@ -5,7 +5,6 @@ export const StyledDrawer = styled.div`
     flex-direction: column;
     width: 300px;
     height: 100%;
-    // border: 1px solid red;
     background-color: ${(props) => (props.theme === true ? "#111827" : "#fff")};
 `;
 
@@ -14,7 +13,6 @@ export const DrawerHeader = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // border: 1px solid red;
     padding: 0 15px 0 15px;
 `;
 
@@ -26,10 +24,7 @@ export const CrossIcon = styled.img`
 export const MobileNavmenuBox = styled.div`
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
-    // border: 1px solid red;
-    gap: 15px;
+    gap: 20px;
     padding: 15px;
     border-top: 1px solid ${(props) => (props.theme === true ? "#6d6e70" : "#f3f4f6")};
     border-bottom: 1px solid ${(props) => (props.theme === true ? "#6d6e70" : "#f3f4f6")};

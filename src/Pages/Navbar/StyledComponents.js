@@ -3,26 +3,30 @@ import styled from "styled-components";
 export const NavContainer = styled.div`
     height: 68px;
     position: sticky;
+    top: 0;
+    z-index: 1000;
     // border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
     // background-color: ${(props) => (props.theme === true ? "#111827" : "#fff")};
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
+    border-bottom: 1px solid ${(props) => (props.theme === true ? "#111827" : "#fff")};
 
     @media (max-width: 767px) {
         padding-left: 30px;
         padding-right: 30px;
         backdrop-filter: blur(4px);
+        height: 55px;
     }
 `;
 
 export const Logo = styled.img`
-    width: 70px;
+    width: 90px;
     height: 70px;
 
     @media (max-width: 767px) {
@@ -36,7 +40,7 @@ export const NavMenuBox = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     // border: 1px solid blue;
 
     @media (max-width: 767px) {
@@ -57,7 +61,7 @@ export const MobileMenuIcon = styled.img`
 export const NavmenuItem = styled.a`
     text-decoration: none;
     color: ${(props) => (props.theme === true ? "#D1D5DB" : "#4b5563")};
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 
     &:hover {
@@ -66,18 +70,18 @@ export const NavmenuItem = styled.a`
 `;
 
 export const Divider = styled.img`
-    height: 40px;
+    height: 30px;
 `;
 
 export const ThemeIcon = styled.img`
-    height: 35px;
-    width: 35px;
+    height: 28px;
+    width: 28px;
     cursor: pointer;
 `;
 
 export const DownloadCVBtn = styled.button`
-    width: 130px;
-    height: 40px;
+    width: 140px;
+    height: 36px;
     border-radius: 13px;
     cursor: pointer;
     border: none;
@@ -85,4 +89,5 @@ export const DownloadCVBtn = styled.button`
     color: ${(props) => (props.theme === true ? "#111827" : "#F9FAFB")};
     font-size: 16px;
     font-weight: 600;
+    outline: none;
 `;

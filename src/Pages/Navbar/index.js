@@ -12,11 +12,11 @@ import {
 import LightLogo from "../../Assets/Img/SSLogo.svg";
 import LightDivider from "../../Assets/Img/LightDivider.svg";
 import DarkDivider from "../../Assets/Img/DarkDivider.svg";
-import LightTLogo from "../../Assets/Img/LightTheamIcon.svg";
-import DarkTLogo from "../../Assets/Img/DarkThmeIcon.svg";
 import DarkLogo from "../../Assets/Img/DarkLogo.svg";
 import DarkmenuIcon from "../../Assets/Img/DarkMenuIcon.svg";
+import LightmodeIcon from "../../Assets/Img/LightmodeIcon.svg";
 import LightMenuIcon from "../../Assets/Img/LightMenuIcon.svg";
+import DarkmodeIcon from "../../Assets/Img/DarkmodeIcon.svg";
 import { ThemeContext } from "../../Context/ThemeContextApi";
 import BasicDrawer from "../../Components/Drawer";
 
@@ -62,7 +62,7 @@ const Navbar = () => {
                     Contact
                 </NavmenuItem>
                 <Divider src={dark ? DarkDivider : LightDivider} alt="divider" />
-                <ThemeIcon src={dark ? DarkTLogo : LightTLogo} onClick={() => setDark((prev) => !prev)} />
+                <ThemeIcon src={!dark ? DarkmodeIcon : LightmodeIcon} onClick={() => setDark((prev) => !prev)} />
                 <DownloadCVBtn theme={dark} onClick={() => window?.open("/files/Sai_Sumanth_2024-01-27.pdf", "_blank")}>
                     Download CV
                 </DownloadCVBtn>
