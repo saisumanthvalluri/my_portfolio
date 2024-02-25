@@ -1,10 +1,10 @@
-.App {
-    text-align: center;
-}
-
 #Drawer {
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
     background-color: blur(1px);
+}
+
+html {
+    scroll-behavior: smooth !important;
     
 }

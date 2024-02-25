@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const BgContainer = styled.div`
     height: 100vh;
     overflow-y: auto;
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
     background-color: ${(props) => (props.theme === true ? "#030712" : "#fff")};
 
     /* Style the scrollbar */

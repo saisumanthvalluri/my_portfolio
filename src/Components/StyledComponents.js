@@ -56,3 +56,8 @@ export const MobileDownloadCVBtn = styled.button`
     font-weight: 600;
     align-self: center;
 `;
+
+export const Link = styled.a`
+    text-decoration: ${(props) => (props.underLine === true ? "underline" : "none")};
+    cursor: pointer;
+`;

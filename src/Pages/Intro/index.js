@@ -18,8 +18,8 @@ import { ThemeContext } from "../../Context/ThemeContextApi";
 import lightLocation from "../../Assets/Img/LightLocation.svg";
 import darkLocation from "../../Assets/Img/DarkLocation.svg";
 import { PulseRing } from "../../Components/PulseRing";
-import background from "../../Assets/Img/Background.svg";
-import darkBg from "../../Assets/Img/DarkBackground.svg";
+import background from "../../Assets/Img/Backgrounds/Background.svg";
+import darkBg from "../../Assets/Img/Backgrounds/DarkBackground.svg";
 import myImage from "../../Assets/Img/myImage.jpeg";
 import githubLite from "../../Assets/Img/SocialMediaIcons/Github_Light.svg";
 import githubDark from "../../Assets/Img/SocialMediaIcons/Github_Dark.svg";
@@ -29,7 +29,7 @@ import twitterDark from "../../Assets/Img/SocialMediaIcons/Twitter_Dark.svg";
 const Intro = () => {
     const { dark } = useContext(ThemeContext);
     return (
-        <IntroContainer>
+        <IntroContainer id="home">
             <IntroTextImgBox>
                 <IntroTextBox>
                     <NameBox>
@@ -57,10 +57,12 @@ const Intro = () => {
                             src={dark ? githubDark : githubLite}
                             alt="github icon"
                             style={{ cursor: "pointer" }}
+                            onClick={() => window?.open("https://github.com/saisumanthvalluri", "_blank")}
                         />
                         {/* {dark ? <LinkedInIcon color="#D1D5DB" /> : <LinkedInIcon color="#D1D5DB" />} */}
                         <LinkedInIcon
                             sx={{ color: dark ? "#D1D5DB" : "#4B5563", fontSize: "25px", cursor: "pointer" }}
+                            onClick={() => window?.open("https://www.linkedin.com/in/v-sai-sumanth/", "_blank")}
                         />
                         <IntroIcons
                             src={dark ? twitterDark : twitterLite}

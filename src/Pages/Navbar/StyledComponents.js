@@ -5,22 +5,20 @@ export const NavContainer = styled.div`
     position: sticky;
     top: 0;
     z-index: 1000;
-    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-left: 45px;
     padding-right: 45px;
-    // background-color: ${(props) => (props.theme === true ? "#111827" : "#fff")};
     -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
-    border-bottom: 1px solid ${(props) => (props.theme === true ? "#111827" : "#fff")};
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid ${(props) => (props.theme === true ? "#374151" : "#fff")};
 
     @media (max-width: 767px) {
         padding-left: 30px;
         padding-right: 30px;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(10px);
         height: 55px;
     }
 `;
@@ -36,12 +34,10 @@ export const Logo = styled.img`
 `;
 
 export const NavMenuBox = styled.div`
-    // width: 500px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 25px;
-    // border: 1px solid blue;
 
     @media (max-width: 767px) {
         display: none;
@@ -49,8 +45,8 @@ export const NavMenuBox = styled.div`
 `;
 
 export const MobileMenuIcon = styled.img`
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 
     @media (min-width: 767px) {

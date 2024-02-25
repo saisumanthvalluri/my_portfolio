@@ -19,6 +19,7 @@ import LightMenuIcon from "../../Assets/Img/LightMenuIcon.svg";
 import DarkmodeIcon from "../../Assets/Img/DarkmodeIcon.svg";
 import { ThemeContext } from "../../Context/ThemeContextApi";
 import BasicDrawer from "../../Components/Drawer";
+import { Link } from "../../Components/StyledComponents";
 
 const Navbar = () => {
     const [open, setopen] = useState(false);
@@ -45,11 +46,13 @@ const Navbar = () => {
 
     return (
         <NavContainer theme={dark}>
-            <Logo src={dark ? DarkLogo : LightLogo} alt="logo" />
+            <Link href="#home">
+                <Logo src={dark ? DarkLogo : LightLogo} alt="logo" />
+            </Link>
             <MobileMenuIcon src={dark ? DarkmenuIcon : LightMenuIcon} alt="menu icon" onClick={() => setopen(true)} />
             <BasicDrawer open={open} setopen={setopen} Logo={Logo} DarkLogo={DarkLogo} LightLogo={LightLogo} />
             <NavMenuBox>
-                <NavmenuItem theme={dark} href="#about">
+                <NavmenuItem theme={dark} href="#about" onClick={() => setopen(false)}>
                     About
                 </NavmenuItem>
                 <NavmenuItem theme={dark} href="#work">

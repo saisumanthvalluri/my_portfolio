@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const IntroContainer = styled.div`
-    height: calc(100vh - 70px);
+    // height: calc(100vh - 70px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @media (max-width: 767px) {
         height: calc(100vh - 55px);
-        border: 1px solid red;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
     }
 `;
 
