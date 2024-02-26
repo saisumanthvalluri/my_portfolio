@@ -50,14 +50,14 @@ const AboutMe = () => {
                         hacker, witnessing the journey of early startups or enjoying some free time. You can follow me
                         on{" "}
                         <Link
-                            underLine={true}
+                            underline="yes"
                             // onClick={() => window?.open("https://github.com/saisumanthvalluri", "_blank")}
                         >
                             Twitter
                         </Link>{" "}
                         where I share tech-related bites and build in public, or you can follow me on{" "}
                         <Link
-                            underLine={true}
+                            underline="yes"
                             onClick={() => window?.open("https://github.com/saisumanthvalluri", "_blank")}>
                             GitHub
                         </Link>

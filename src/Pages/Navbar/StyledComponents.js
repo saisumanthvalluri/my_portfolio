@@ -62,6 +62,7 @@ export const NavmenuItem = styled.a`
 
     &:hover {
         color: ${(props) => (props.theme === true ? "#f2f4f7" : "#22262b")};
+        cursor: pointer;
     }
 `;
 

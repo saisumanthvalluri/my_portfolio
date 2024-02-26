@@ -8,6 +8,10 @@ const Tag = styled.span`
     background-color: ${(props) => (props.theme === true ? "#374151" : "#E5E7EB")};
     padding: 4px 20px;
     border-radius: 10px;
+
+    @media (max-width: 767px) {
+        padding: 4px 20px 7px 20px;
+    }
 `;
 
 const CustomSectionTag = (props) => {

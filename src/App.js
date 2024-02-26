@@ -5,6 +5,8 @@ import { BgContainer } from "./App.StyledComponents";
 import Intro from "./Pages/Intro";
 import AboutMe from "./Pages/About_Me";
 import "./App.css";
+import Skills from "./Pages/Skills";
+import Experience from "./Pages/Experience";
 
 const App = () => {
     const [dark, setDark] = useState(false);
@@ -25,6 +27,8 @@ const App = () => {
                 <Navbar />
                 <Intro />
                 <AboutMe />
+                <Skills />
+                <Experience />
             </BgContainer>
         </ThemeContext.Provider>
     );

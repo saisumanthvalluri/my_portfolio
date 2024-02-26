@@ -46,7 +46,7 @@ const Navbar = () => {
 
     return (
         <NavContainer theme={dark}>
-            <Link href="#home">
+            <Link href="#home" underline="no">
                 <Logo src={dark ? DarkLogo : LightLogo} alt="logo" />
             </Link>
             <MobileMenuIcon src={dark ? DarkmenuIcon : LightMenuIcon} alt="menu icon" onClick={() => setopen(true)} />

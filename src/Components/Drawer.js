@@ -76,16 +76,16 @@ const BasicDrawer = (props) => {
                     <CrossIcon src={dark ? darkCrossIcon : lightCrossIcon} onClick={() => setopen(false)} />
                 </DrawerHeader>
                 <MobileNavmenuBox theme={dark}>
-                    <NavmenuItem theme={dark} href="#about">
+                    <NavmenuItem theme={dark} href="#about" onClick={() => setopen(false)}>
                         About
                     </NavmenuItem>
-                    <NavmenuItem theme={dark} href="#work">
+                    <NavmenuItem theme={dark} href="#work" onClick={() => setopen(false)}>
                         Work
                     </NavmenuItem>
-                    <NavmenuItem theme={dark} href="#testimonials">
+                    <NavmenuItem theme={dark} href="#testimonials" onClick={() => setopen(false)}>
                         Testimonials
                     </NavmenuItem>
-                    <NavmenuItem theme={dark} href="#contact">
+                    <NavmenuItem theme={dark} href="#contact" onClick={() => setopen(false)}>
                         Contact
                     </NavmenuItem>
                 </MobileNavmenuBox>

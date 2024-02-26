@@ -58,6 +58,6 @@ export const MobileDownloadCVBtn = styled.button`
 `;
 
 export const Link = styled.a`
-    text-decoration: ${(props) => (props.underLine === true ? "underline" : "none")};
+    text-decoration: ${(props) => (props.underline === "yes" ? "underline" : "none")};
     cursor: pointer;
 `;

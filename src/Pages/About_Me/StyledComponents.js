@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     // justify-content: center;
     align-items: center;
-    padding: 90px 45px 30px 45px;
+    padding: 90px 45px 80px 45px;
     background-color: ${(props) => (props.theme === true ? "#111827" : "#F9FAFB")};
 
     @media (max-width: 767px) {
