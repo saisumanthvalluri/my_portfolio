@@ -12,8 +12,6 @@ import {
 import CustomSectionTag from "../../Components/CustomSectionTag";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeContextApi";
-import background from "../../Assets/Img/Backgrounds/Background.svg";
-import darkAboutBg from "../../Assets/Img/Backgrounds/DarkaboutBg.svg";
 import myImage from "../../Assets/Img/myImage2.jpg";
 import { Link } from "../../Components/StyledComponents";
 
@@ -23,7 +21,7 @@ const AboutMe = () => {
         <AboutContainer theme={dark} id="about">
             <CustomSectionTag name="About" theme={dark} />
             <AboutImgTextBox>
-                <AboutImgBox background={dark ? darkAboutBg : background}>
+                <AboutImgBox theme={dark}>
                     <AboutImg src={myImage} theme={dark} alt="my Image" />
                 </AboutImgBox>
                 <AboutTextBox>

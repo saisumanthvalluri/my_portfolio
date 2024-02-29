@@ -64,7 +64,7 @@ const Navbar = () => {
                 <NavmenuItem theme={dark} href="#contact">
                     Contact
                 </NavmenuItem>
-                <Divider src={dark ? DarkDivider : LightDivider} alt="divider" />
+                <Divider src={dark ? LightDivider : DarkDivider} alt="divider" />
                 <ThemeIcon src={!dark ? DarkmodeIcon : LightmodeIcon} onClick={() => setDark((prev) => !prev)} />
                 <DownloadCVBtn theme={dark} onClick={() => window?.open("/files/Sai_Sumanth_2024-01-27.pdf", "_blank")}>
                     Download CV

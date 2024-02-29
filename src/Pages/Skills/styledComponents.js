@@ -11,6 +11,10 @@ export const SkillsContainer = styled.div`
     @media (max-width: 767px) {
         padding: 70px 15px 50px 15px;
     }
+
+    @media (min-width: 1400px) {
+        padding: 120px 15% 100px 15%;
+    }
 `;
 
 export const SkillsList = styled.ul`
@@ -41,7 +45,6 @@ export const SkillItem = styled.div`
 
     @media (max-width: 767px) {
         width: 28%;
-        // border: 1px solid red;
     }
 `;
 

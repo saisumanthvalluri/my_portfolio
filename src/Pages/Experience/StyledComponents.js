@@ -10,6 +10,10 @@ export const ExperienceContainer = styled.div`
     @media (max-width: 767px) {
         padding: 70px 15px 60px 15px;
     }
+
+    @media (min-width: 1400px) {
+        padding: 120px 15% 100px 15%;
+    }
 `;
 
 export const ExperienceCard = styled.div`
@@ -30,6 +34,8 @@ export const ExperienceCard = styled.div`
         flex-direction: column-reverse;
         gap: 15px;
     }
+
+
 `;
 
 export const CompanyLogo = styled.img`

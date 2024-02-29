@@ -11,6 +11,11 @@ export const IntroContainer = styled.div`
         height: calc(100vh - 55px);
         padding-bottom: 150px;
     }
+
+    @media (min-width: 1400px) {
+        height: 50vh;
+        padding: 100px 13% 100px 13%;
+    }
 `;
 
 export const IntroTextImgBox = styled.div`
@@ -122,10 +127,7 @@ export const IntroIcons = styled.img`
 `;
 
 export const MyIntroImgBox = styled.div`
-    background-image: ${(props) => `url(${props.background})`};
-    background-size: cover;
-
-    // border: 1px solid red;
+    background-color: ${(props) => (props.theme === true ? "#374151" : "#E5E7EB")};
     width: 300px;
     height: 330px;
     position: relative;

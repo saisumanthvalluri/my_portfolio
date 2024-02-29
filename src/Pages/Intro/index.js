@@ -18,8 +18,6 @@ import { ThemeContext } from "../../Context/ThemeContextApi";
 import lightLocation from "../../Assets/Img/LightLocation.svg";
 import darkLocation from "../../Assets/Img/DarkLocation.svg";
 import { PulseRing } from "../../Components/PulseRing";
-import background from "../../Assets/Img/Backgrounds/Background.svg";
-import darkBg from "../../Assets/Img/Backgrounds/DarkBackground.svg";
 import myImage from "../../Assets/Img/myImage.jpeg";
 import githubLite from "../../Assets/Img/SocialMediaIcons/Github_Light.svg";
 import githubDark from "../../Assets/Img/SocialMediaIcons/Github_Dark.svg";
@@ -71,7 +69,7 @@ const Intro = () => {
                         />
                     </MyIntroSocialMediaIconsBox>
                 </IntroTextBox>
-                <MyIntroImgBox background={dark ? darkBg : background}>
+                <MyIntroImgBox theme={dark}>
                     <MyImage theme={dark} src={myImage} alt="my image" />
                 </MyIntroImgBox>
             </IntroTextImgBox>

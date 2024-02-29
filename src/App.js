@@ -7,6 +7,8 @@ import AboutMe from "./Pages/About_Me";
 import "./App.css";
 import Skills from "./Pages/Skills";
 import Experience from "./Pages/Experience";
+import Work from "./Pages/Work";
+import Testimonials from "./Pages/Testimonials";
 
 const App = () => {
     const [dark, setDark] = useState(false);
@@ -29,6 +31,8 @@ const App = () => {
                 <AboutMe />
                 <Skills />
                 <Experience />
+                <Work />
+                <Testimonials />
             </BgContainer>
         </ThemeContext.Provider>
     );

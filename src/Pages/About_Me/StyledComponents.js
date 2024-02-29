@@ -12,6 +12,10 @@ export const AboutContainer = styled.div`
     @media (max-width: 767px) {
         padding: 70px 15px 30px 15px;
     }
+
+    @media (min-width: 1400px) {
+        padding: 120px 15% 50px 15%;
+    }
 `;
 
 export const AboutImgTextBox = styled.div`
@@ -30,8 +34,7 @@ export const AboutImgTextBox = styled.div`
 `;
 
 export const AboutImgBox = styled.div`
-    background-image: ${(props) => `url(${props.background})`};
-    background-size: cover;
+    background-color: ${(props) => (props.theme === true ? "#374151" : "#E5E7EB")};
     width: 340px;
     height: 465px;
     position: relative;

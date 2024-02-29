@@ -21,6 +21,12 @@ export const NavContainer = styled.div`
         backdrop-filter: blur(10px);
         height: 55px;
     }
+
+    @media (min-width: 1400px) {
+        height: 80px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 `;
 
 export const Logo = styled.img`
@@ -45,8 +51,8 @@ export const NavMenuBox = styled.div`
 `;
 
 export const MobileMenuIcon = styled.img`
-    width: 30px;
-    height: 30px;
+    width: 37px;
+    height: 37px;
     cursor: pointer;
 
     @media (min-width: 767px) {
