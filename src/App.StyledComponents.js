@@ -15,6 +15,11 @@ export const BgContainer = styled.div`
     &::-webkit-scrollbar-thumb {
         background-color: ${(props) => (props.theme === true ? "#424345" : "#c0c2c2")};
         border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: ${(props) => (props.theme === true? "#303133" : "#979999")};
+        }
     }
 
     &::-webkit-scrollbar-track {

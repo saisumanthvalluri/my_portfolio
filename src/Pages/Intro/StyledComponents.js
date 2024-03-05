@@ -14,7 +14,7 @@ export const IntroContainer = styled.div`
 
     @media (min-width: 1400px) {
         height: 50vh;
-        padding: 100px 13% 100px 13%;
+        padding: 90px 15% 90px 15%;
     }
 `;
 

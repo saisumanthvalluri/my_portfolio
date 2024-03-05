@@ -13,7 +13,7 @@ export const SkillsContainer = styled.div`
     }
 
     @media (min-width: 1400px) {
-        padding: 120px 15% 100px 15%;
+        padding: 120px 17% 100px 17%;
     }
 `;
 

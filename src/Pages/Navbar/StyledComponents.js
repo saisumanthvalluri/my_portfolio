@@ -13,7 +13,8 @@ export const NavContainer = styled.div`
     padding-right: 45px;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(50px);
-    border-bottom: 1px solid ${(props) => (props.theme === true ? "#374151" : "#fff")};
+    // border-bottom: 1px solid ${(props) => (props.theme === true ? "#374151" : "#fff")};
+    border-bottom: 1px solid transparent;
 
     @media (max-width: 767px) {
         padding-left: 30px;
@@ -24,8 +25,8 @@ export const NavContainer = styled.div`
 
     @media (min-width: 1400px) {
         height: 80px;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 17%;
+        padding-right: 16%;
     }
 `;
 
