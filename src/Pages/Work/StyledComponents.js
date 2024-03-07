@@ -38,7 +38,7 @@ export const ProjectHomePageImgBox = styled.div`
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-radius: ${(props) => props.borderRadius};
+    border-radius: ${(props) => props.borderradius};
     width: 50%;
     background-color: ${(props) => (props.theme === true ? "#374151" : "#F9FAFB")};
 
@@ -77,7 +77,7 @@ export const ProjectDetailsBox = styled.div`
     background-color: ${(props) => (props.theme === true ? "#1F2937" : "#FFFFFF")};
     width: 50%;
     flex-grow: 1;
-    border-radius: ${(props) => props.borderRadius};
+    border-radius: ${(props) => props.borderradius};
     padding: 48px;
     box-sizing: border-box;
 

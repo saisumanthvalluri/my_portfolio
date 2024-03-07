@@ -32,15 +32,28 @@ const Navbar = () => {
             }
         };
 
+        const handleHashChange = () => {
+            const hash = window.location.hash;
+            if (hash) {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                }
+            }
+        };
+
         // Initial check on component mount
         handleResize();
+        handleHashChange();
 
-        // Add event listener for window resize
+        // Add event listeners for window resize and hash change
         window.addEventListener("resize", handleResize);
+        window.addEventListener("hashchange", handleHashChange);
 
-        // Clean up the event listener on component unmount
+        // Clean up the event listeners on component unmount
         return () => {
             window.removeEventListener("resize", handleResize);
+            window.removeEventListener("hashchange", handleHashChange);
         };
     }, []);
 

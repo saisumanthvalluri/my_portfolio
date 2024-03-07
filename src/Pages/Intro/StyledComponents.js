@@ -159,7 +159,7 @@ export const MyIntroSocialMediaIconsBox = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
 
     @media (max-width: 767px) {

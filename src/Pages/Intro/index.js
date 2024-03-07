@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { FiGithub, FiTwitter } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
 import {
     IntroContainer,
     IntroTextBox,
@@ -19,10 +20,8 @@ import lightLocation from "../../Assets/Img/LightLocation.svg";
 import darkLocation from "../../Assets/Img/DarkLocation.svg";
 import { PulseRing } from "../../Components/PulseRing";
 import myImage from "../../Assets/Img/myImage.jpeg";
-import githubLite from "../../Assets/Img/SocialMediaIcons/Github_Light.svg";
-import githubDark from "../../Assets/Img/SocialMediaIcons/Github_Dark.svg";
-import twitterLite from "../../Assets/Img/SocialMediaIcons/Twitter_Light.svg";
-import twitterDark from "../../Assets/Img/SocialMediaIcons/Twitter_Dark.svg";
+import { LinkIconBox } from "../../Components/StyledComponents";
+import { Config_Vars } from "../../Assets/Constants";
 
 const Intro = () => {
     const { dark } = useContext(ThemeContext);
@@ -35,10 +34,7 @@ const Intro = () => {
                         <HandIcon>👋</HandIcon>
                     </NameBox>
                     <IntroText theme={dark}>
-                        I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally
-                        designing) exceptional digital experiences that are fast, accessible, visually appealing, and
-                        responsive. Even though I have been creating web applications for over 2 years, I still love it
-                        as if it was something new.
+                       {Config_Vars.introText}
                     </IntroText>
                     <LocationBox>
                         <IntroIcons src={dark ? darkLocation : lightLocation} alt="location" />
@@ -51,22 +47,15 @@ const Intro = () => {
                         </IntroText>
                     </LocationBox>
                     <MyIntroSocialMediaIconsBox>
-                        <IntroIcons
-                            src={dark ? githubDark : githubLite}
-                            alt="github icon"
-                            style={{ cursor: "pointer" }}
-                            onClick={() => window?.open("https://github.com/saisumanthvalluri", "_blank")}
-                        />
-                        {/* {dark ? <LinkedInIcon color="#D1D5DB" /> : <LinkedInIcon color="#D1D5DB" />} */}
-                        <LinkedInIcon
-                            sx={{ color: dark ? "#D1D5DB" : "#4B5563", fontSize: "25px", cursor: "pointer" }}
-                            onClick={() => window?.open("https://www.linkedin.com/in/v-sai-sumanth/", "_blank")}
-                        />
-                        <IntroIcons
-                            src={dark ? twitterDark : twitterLite}
-                            alt="github icon"
-                            style={{ cursor: "pointer" }}
-                        />
+                        <LinkIconBox theme={dark}>
+                            <FiGithub fontSize="24px" color={dark ? "#D1D5DB" : "#4B5563"} />
+                        </LinkIconBox>
+                        <LinkIconBox theme={dark}>
+                            <FaLinkedin fontSize="24px" color={dark ? "#D1D5DB" : "#4B5563"} />
+                        </LinkIconBox>
+                        <LinkIconBox theme={dark}>
+                            <FiTwitter fontSize="24px" color={dark ? "#D1D5DB" : "#4B5563"} />
+                        </LinkIconBox>
                     </MyIntroSocialMediaIconsBox>
                 </IntroTextBox>
                 <MyIntroImgBox theme={dark}>

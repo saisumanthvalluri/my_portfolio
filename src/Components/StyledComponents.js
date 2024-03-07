@@ -60,4 +60,25 @@ export const MobileDownloadCVBtn = styled.button`
 export const Link = styled.a`
     text-decoration: ${(props) => (props.underline === "yes" ? "underline" : "none")};
     cursor: pointer;
+
+    &:hover {
+        color: ${(props) => (props.theme === true? "#f2f4f7" : "#22262b")};
+        transition: all 0.3s ease-in-out;
+    }
+`;
+
+export const LinkIconBox = styled.div`
+    padding: 7px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: ${(props) => (props.theme === true ? "#111827" : "#F3F4F6")};
+        transition: all 0.3s ease-in-out;
+    }
 `;
