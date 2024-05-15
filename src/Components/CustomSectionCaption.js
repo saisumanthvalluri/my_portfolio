@@ -7,9 +7,11 @@ export const Caption = styled.h5`
     line-height: 28px;
     margin: 0;
     margin-top: 20px;
+    max-width: 50%;
+    text-align: center;
 
     @media (max-width: 767px) {
-        text-align: center;
+        max-width: 100%;
     }
 `;
 

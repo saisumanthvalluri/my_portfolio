@@ -1,4 +1,6 @@
 import { useContext, useEffect, useState } from "react";
+import { IoSunnyOutline } from "react-icons/io5";
+import { BsMoonStars } from "react-icons/bs";
 import {
     NavContainer,
     Logo,
@@ -8,6 +10,7 @@ import {
     ThemeIcon,
     DownloadCVBtn,
     MobileMenuIcon,
+    ThemeToggleBtn,
 } from "./StyledComponents";
 import LightLogo from "../../Assets/Img/SSLogo.svg";
 import LightDivider from "../../Assets/Img/LightDivider.svg";
@@ -78,7 +81,11 @@ const Navbar = () => {
                     Contact
                 </NavmenuItem>
                 <Divider src={dark ? LightDivider : DarkDivider} alt="divider" />
-                <ThemeIcon src={!dark ? DarkmodeIcon : LightmodeIcon} onClick={() => setDark((prev) => !prev)} />
+                <ThemeToggleBtn theme={dark} onClick={() => setDark((prev) => !prev)}>
+                    {dark ? <BsMoonStars fontSize={25} /> : <IoSunnyOutline />}
+                </ThemeToggleBtn>
+                {/* <ThemeIcon src={!dark ? DarkmodeIcon : LightmodeIcon} onClick={() => setDark((prev) => !prev)} /> */}
+                {/* <IoSunnyOutline className="theme-toggle-icon" onClick={() => setDark((prev) => !prev)} /> */}
                 <DownloadCVBtn theme={dark} onClick={() => window?.open("/files/Sai_Sumanth_2024-01-27.pdf", "_blank")}>
                     Download CV
                 </DownloadCVBtn>

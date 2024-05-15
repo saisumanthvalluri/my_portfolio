@@ -102,6 +102,12 @@ export const HandIcon = styled.span`
     }
 `;
 
+export const Hand = styled.img`
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+`;
+
 export const IntroText = styled.p`
     position: relative;
     font-size: 16px;

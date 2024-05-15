@@ -14,7 +14,7 @@ export const NavContainer = styled.div`
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(50px);
     // border-bottom: 1px solid ${(props) => (props.theme === true ? "#374151" : "#fff")};
-    border-bottom: 1px solid transparent;
+    // border-bottom: 1px solid transparent;
 
     @media (max-width: 767px) {
         padding-left: 30px;
@@ -66,10 +66,10 @@ export const NavmenuItem = styled.a`
     color: ${(props) => (props.theme === true ? "#D1D5DB" : "#4b5563")};
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 
     &:hover {
         color: ${(props) => (props.theme === true ? "#f2f4f7" : "#22262b")};
-        cursor: pointer;
     }
 `;
 
@@ -94,4 +94,22 @@ export const DownloadCVBtn = styled.button`
     font-size: 16px;
     font-weight: 600;
     outline: none;
+`;
+
+export const ThemeToggleBtn = styled.div`
+    font-size: 33px;
+    color: ${(props) => (props.theme === true ? "#D1D5DB" : "#4b5563")};
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+
+    // &:hover {
+    //     color: ${(props) => (props.theme === true ? "#f2f4f7" : "#22262b")};
+    //     background-color: ${(props) => (props.theme === true ? "#111827" : "#F3F4F6")};
+    //     transition: all 0.3s ease-in-out;
+    // }
 `;

@@ -60,8 +60,8 @@ export const AvatarBox = styled.div`
 `;
 
 export const TestimonialImage = styled.img`
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 `;
 
@@ -78,6 +78,7 @@ export const Name = styled.h3`
     font-weight: 600;
     line-height: 28px;
     margin: 0;
+    margin-top: auto;
 `;
 
 export const Specilization = styled.p`

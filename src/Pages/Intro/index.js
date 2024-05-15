@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
+import { MdWavingHand } from "react-icons/md";
+import { PiHandWavingFill } from "react-icons/pi";
 import {
     IntroContainer,
     IntroTextBox,
@@ -8,6 +10,7 @@ import {
     Name,
     NameBox,
     HandIcon,
+    Hand,
     IntroText,
     LocationBox,
     IntroIcons,
@@ -31,11 +34,10 @@ const Intro = () => {
                 <IntroTextBox>
                     <NameBox>
                         <Name theme={dark}>Hi, I'm Sumanth</Name>
-                        <HandIcon>👋</HandIcon>
+                        {/* <HandIcon>👋</HandIcon> */}
+                        <PiHandWavingFill className="hand" />
                     </NameBox>
-                    <IntroText theme={dark}>
-                       {Config_Vars.introText}
-                    </IntroText>
+                    <IntroText theme={dark}>{Config_Vars.introText}</IntroText>
                     <LocationBox>
                         <IntroIcons src={dark ? darkLocation : lightLocation} alt="location" />
                         <IntroText theme={dark}>Hyderabad, India</IntroText>
@@ -48,13 +50,25 @@ const Intro = () => {
                     </LocationBox>
                     <MyIntroSocialMediaIconsBox>
                         <LinkIconBox theme={dark}>
-                            <FiGithub fontSize="24px" color={dark ? "#D1D5DB" : "#4B5563"} />
+                            <FiGithub
+                                fontSize="24px"
+                                color={dark ? "#D1D5DB" : "#4B5563"}
+                                onClick={() => window?.open("https://github.com/saisumanthvalluri", "_blank")}
+                            />
                         </LinkIconBox>
                         <LinkIconBox theme={dark}>
-                            <FaLinkedin fontSize="24px" color={dark ? "#D1D5DB" : "#4B5563"} />
+                            <FaLinkedin
+                                fontSize="24px"
+                                color={dark ? "#D1D5DB" : "#4B5563"}
+                                onClick={() => window?.open("https://www.linkedin.com/in/v-sai-sumanth/", "_blank")}
+                            />
                         </LinkIconBox>
                         <LinkIconBox theme={dark}>
-                            <FiTwitter fontSize="24px" color={dark ? "#D1D5DB" : "#4B5563"} />
+                            <FiTwitter
+                                fontSize="24px"
+                                color={dark ? "#D1D5DB" : "#4B5563"}
+                                onClick={() => window?.open("https://twitter.com/SaiSumanth_3123", "_blank")}
+                            />
                         </LinkIconBox>
                     </MyIntroSocialMediaIconsBox>
                 </IntroTextBox>
