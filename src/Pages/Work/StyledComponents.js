@@ -50,8 +50,9 @@ export const ProjectHomePageImgBox = styled.div`
 `;
 
 export const ProjectHomePageImg = styled.img`
-    width: 480px;
-    height: 320px;
+    width: 500px;
+    height: 330px;
+    // object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;

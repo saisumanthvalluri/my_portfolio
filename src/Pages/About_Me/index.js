@@ -35,8 +35,7 @@ const AboutMe = () => {
                         <Link
                             underline="yes"
                             theme={dark}
-                            // onClick={() => window?.open("https://github.com/saisumanthvalluri", "_blank")}
-                        >
+                            onClick={() => window?.open("https://twitter.com/SaiSumanth_3123", "_blank")}>
                             Twitter
                         </Link>{" "}
                         {Config_Vars.aboutText.text5}{" "}

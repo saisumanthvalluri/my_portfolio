@@ -10,6 +10,7 @@ import jobbyapp from "../Assets/Img/ProjectsHomePages/Jobby-app.png";
 import nxtTrenz from "../Assets/Img/ProjectsHomePages/NxtTrenz-app.png";
 import nexWatch from "../Assets/Img/ProjectsHomePages/NxtWatch-app.png";
 import tastyKitchens from "../Assets/Img/ProjectsHomePages/TastyKitchens.png";
+import chatSphere from "../Assets/Img/ProjectsHomePages/Chat-Sphere-home.jpg";
 
 export const Config_Vars = Object.freeze({
     testimonials: [
@@ -204,6 +205,32 @@ export const Config_Vars = Object.freeze({
     works: [
         {
             id: 1,
+            direction: "row-reverse",
+            url: "https://chat-sphere-chi.vercel.app/",
+            projectHomePage: {
+                homePageImg: chatSphere,
+                borderRadius: "0 12px 12px 0 ",
+            },
+            detail: {
+                name: "Chat Sphere - Real-time Chatting Application",
+                borderRadius: "12px 0 0 12px",
+                description: `Chat Sphere is a real-time chatting platform with features like sign-in, sign-up, forgot password, and reset password.
+                 Users can chat with friends, send friend requests, share images and files, and block/unblock friends. 
+                 The app offers an interactive profile with real-time updates and animations.
+                 Built with React and Vite, and powered by Zustand and Firebase, Chat Sphere ensures a dynamic and responsive user experience.`,
+
+                technologies: [
+                    { id: 1, name: "Next Js" },
+                    { id: 2, name: "Javascript" },
+                    { id: 3, name: "Firebase" },
+                    { id: 4, name: "Zustand" },
+                    { id: 5, name: "Authentication" },
+                    { id: 6, name: "Authorization" },
+                ],
+            },
+        },
+        {
+            id: 2,
             direction: "row",
             url: "https://sumanthjobbyapp.ccbp.tech/",
             projectHomePage: {
@@ -230,7 +257,7 @@ export const Config_Vars = Object.freeze({
             },
         },
         {
-            id: 2,
+            id: 3,
             direction: "row-reverse",
             url: "https://ntrendsumanth.ccbp.tech/",
             projectHomePage: {
@@ -267,7 +294,7 @@ export const Config_Vars = Object.freeze({
             },
         },
         {
-            id: 3,
+            id: 4,
             direction: "row",
             url: "https://nwatchsumanth.ccbp.tech/",
             projectHomePage: {
@@ -301,7 +328,7 @@ export const Config_Vars = Object.freeze({
             },
         },
         {
-            id: 4,
+            id: 5,
             direction: "row-reverse",
             url: "https://tasty-kitchens-app.web.app/",
             projectHomePage: {

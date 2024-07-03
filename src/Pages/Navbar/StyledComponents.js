@@ -113,3 +113,8 @@ export const ThemeToggleBtn = styled.div`
     //     transition: all 0.3s ease-in-out;
     // }
 `;
+
+export const Seperator = styled.p`
+    font-size: 25px;
+    color: ${(props) => (props.theme === true ? "#D1D5DB" : "#4b5563")};
+`;

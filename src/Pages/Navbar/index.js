@@ -6,20 +6,17 @@ import {
     Logo,
     NavMenuBox,
     NavmenuItem,
-    Divider,
-    ThemeIcon,
+    // Divider,
+    Seperator,
+    // ThemeIcon,
     DownloadCVBtn,
     MobileMenuIcon,
     ThemeToggleBtn,
 } from "./StyledComponents";
 import LightLogo from "../../Assets/Img/SSLogo.svg";
-import LightDivider from "../../Assets/Img/LightDivider.svg";
-import DarkDivider from "../../Assets/Img/DarkDivider.svg";
 import DarkLogo from "../../Assets/Img/DarkLogo.svg";
 import DarkmenuIcon from "../../Assets/Img/DarkMenuIcon.svg";
-import LightmodeIcon from "../../Assets/Img/LightmodeIcon.svg";
 import LightMenuIcon from "../../Assets/Img/LightMenuIcon.svg";
-import DarkmodeIcon from "../../Assets/Img/DarkmodeIcon.svg";
 import { ThemeContext } from "../../Context/ThemeContextApi";
 import BasicDrawer from "../../Components/Drawer";
 import { Link } from "../../Components/StyledComponents";
@@ -80,13 +77,16 @@ const Navbar = () => {
                 <NavmenuItem theme={dark} href="#contact">
                     Contact
                 </NavmenuItem>
-                <Divider src={dark ? LightDivider : DarkDivider} alt="divider" />
+                {/* <Divider src={dark ? LightDivider : DarkDivider} alt="divider" /> */}
+                <Seperator theme={dark}>|</Seperator>
                 <ThemeToggleBtn theme={dark} onClick={() => setDark((prev) => !prev)}>
                     {dark ? <BsMoonStars fontSize={25} /> : <IoSunnyOutline />}
                 </ThemeToggleBtn>
                 {/* <ThemeIcon src={!dark ? DarkmodeIcon : LightmodeIcon} onClick={() => setDark((prev) => !prev)} /> */}
                 {/* <IoSunnyOutline className="theme-toggle-icon" onClick={() => setDark((prev) => !prev)} /> */}
-                <DownloadCVBtn theme={dark} onClick={() => window?.open("/files/Sai_Sumanth_2024-01-27.pdf", "_blank")}>
+                <DownloadCVBtn
+                    theme={dark}
+                    onClick={() => window?.open("/files/Sai_Sumanth_Resume_26_06_2024.pdf", "_blank")}>
                     Download CV
                 </DownloadCVBtn>
             </NavMenuBox>

@@ -1,8 +1,7 @@
 import { useContext } from "react";
-import { FiGithub, FiTwitter } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
-import { MdWavingHand } from "react-icons/md";
-import { PiHandWavingFill } from "react-icons/pi";
+import { RiTwitterXLine } from "react-icons/ri";
 import {
     IntroContainer,
     IntroTextBox,
@@ -10,7 +9,6 @@ import {
     Name,
     NameBox,
     HandIcon,
-    Hand,
     IntroText,
     LocationBox,
     IntroIcons,
@@ -34,8 +32,7 @@ const Intro = () => {
                 <IntroTextBox>
                     <NameBox>
                         <Name theme={dark}>Hi, I'm Sumanth</Name>
-                        {/* <HandIcon>👋</HandIcon> */}
-                        <PiHandWavingFill className="hand" />
+                        <HandIcon>👋</HandIcon>
                     </NameBox>
                     <IntroText theme={dark}>{Config_Vars.introText}</IntroText>
                     <LocationBox>
@@ -64,7 +61,7 @@ const Intro = () => {
                             />
                         </LinkIconBox>
                         <LinkIconBox theme={dark}>
-                            <FiTwitter
+                            <RiTwitterXLine
                                 fontSize="24px"
                                 color={dark ? "#D1D5DB" : "#4B5563"}
                                 onClick={() => window?.open("https://twitter.com/SaiSumanth_3123", "_blank")}

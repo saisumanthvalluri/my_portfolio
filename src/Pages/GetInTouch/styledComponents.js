@@ -31,6 +31,7 @@ export const ContactItems = styled.ul`
 `;
 
 export const ContactItemBox = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,5 +82,22 @@ export const MyIntroSocialMediaIconsBox = styled.div`
 
     @media (max-width: 767px) {
         margin-top: 10px;
+    }
+`;
+
+export const ToolTip = styled.span`
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: ${(props) => (props.theme === true ? "#D1D5DB" : "#4B5563")};
+    background-color: ${(props) => (props.theme === true ? "#374151" : "#E5E7EB")};
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -35px;
+    right: -13px;
+
+    @media (max-width: 767px) {
+        padding: 5px 10px;
     }
 `;

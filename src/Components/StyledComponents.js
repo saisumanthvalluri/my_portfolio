@@ -62,7 +62,7 @@ export const Link = styled.a`
     cursor: pointer;
 
     &:hover {
-        color: ${(props) => (props.theme === true? "#f2f4f7" : "#22262b")};
+        color: ${(props) => (props.theme === true ? "#f2f4f7" : "#22262b")};
         transition: all 0.3s ease-in-out;
     }
 `;
@@ -72,7 +72,7 @@ export const LinkIconBox = styled.div`
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
