@@ -78,7 +78,7 @@ export const Config_Vars = Object.freeze({
         quickBites: [
             { id: 1, text: "B.Tech in Mechanical Engineering" },
             { id: 2, text: "Avid learner" },
-            { id: 3, text: "Full time freelancer" },
+            { id: 3, text: "Part time freelancer" },
             { id: 4, text: "Aspiring indie hacker" },
         ],
     },
@@ -206,7 +206,7 @@ export const Config_Vars = Object.freeze({
         {
             id: 1,
             direction: "row-reverse",
-            url: "https://chat-sphere-chi.vercel.app/",
+            url: "https://chat-sphere-ochre.vercel.app/",
             projectHomePage: {
                 homePageImg: chatSphere,
                 borderRadius: "0 12px 12px 0 ",
@@ -226,6 +226,7 @@ export const Config_Vars = Object.freeze({
                     { id: 4, name: "Zustand" },
                     { id: 5, name: "Authentication" },
                     { id: 6, name: "Authorization" },
+                    { id: 6, name: "Material UI  v5.16.1" },
                 ],
             },
         },

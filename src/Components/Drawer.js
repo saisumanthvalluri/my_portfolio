@@ -99,7 +99,7 @@ const BasicDrawer = (props) => {
                 </SwitchThemeBtn>
                 <MobileDownloadCVBtn
                     theme={dark}
-                    onClick={() => window?.open("/files/Sai_Sumanth_Resume_26_06_2024.pdf", "_blank")}>
+                    onClick={() => window?.open("/files/Sai_Sumanth_Resume_16_07_2024.pdf", "_blank")}>
                     Download CV
                 </MobileDownloadCVBtn>
             </StyledDrawer>
