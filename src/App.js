@@ -8,7 +8,7 @@ import "./App.css";
 import Skills from "./Pages/Skills";
 import Experience from "./Pages/Experience";
 import Work from "./Pages/Work";
-import Testimonials from "./Pages/Testimonials";
+// import Testimonials from "./Pages/Testimonials";
 import GetInTouch from "./Pages/GetInTouch";
 import Footer from "./Pages/Footer";
 

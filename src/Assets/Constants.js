@@ -1,6 +1,6 @@
 import { SiJirasoftware } from "react-icons/si";
 import { SiFastapi } from "react-icons/si";
-import { FaAngular, FaCss3Alt, FaHtml5, FaReact, FaNodeJs, FaSass, FaGitAlt } from "react-icons/fa";
+import { FaAngular, FaCss3Alt, FaHtml5, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiNextdotjs, SiExpress, SiDirectus } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import iLDark from "../Assets/Img/Logos/IL-Logo-dark.svg";
