@@ -42,7 +42,7 @@ const Intro = () => {
                     <LocationBox>
                         <PulseRing />
                         <IntroText theme={dark} style={{ marginLeft: "24px" }}>
-                            Available for new projects
+                            Looking for new opportunities
                         </IntroText>
                     </LocationBox>
                     <MyIntroSocialMediaIconsBox>

@@ -11,7 +11,7 @@ const Footer = () => {
         <FooterContainer theme={dark}>
             <FooterText theme={dark}>
                 <p>
-                    Copyright © 2024 |{" "}
+                    Copyright © 2025 |{" "}
                     <Link
                         theme={dark}
                         underline="yes"

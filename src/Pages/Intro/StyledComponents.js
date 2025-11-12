@@ -70,7 +70,7 @@ export const Name = styled.h1`
 
 export const HandIcon = styled.span`
     font-size: 60px;
-    animation: jump-shaking 2s linear 3;
+    animation: jump-shaking 2s linear infinite;
 
     @keyframes jump-shaking {
         0% {
